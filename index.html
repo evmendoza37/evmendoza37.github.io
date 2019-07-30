@@ -19,6 +19,22 @@ body, html {
 .menu {
   display: none;
 }
+  /* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 </style>
 <body>
 
@@ -37,9 +53,15 @@ body, html {
     <div class="w3-col s3">
       <a href="career.html" class="w3-button w3-block w3-black">SCHOOL/CAREER</a>
     </div>
-    <div class="w3-col s3">
-      <a href="citizen.html" class="w3-button w3-block w3-black">CITIZENSHIP</a>
-    </div>
+       <div class="w3-col s3"><div class="dropdown">
+      <a href="citizen.html" class="w3-button w3-block w3-black" button class="dropbtn">CITIZENSHIP</a /button>
+        <div class="dropdown-content">
+          <a href="citizen2.html">Is Citizenship Right for Me? || My Rights</a>
+          <a href="application.html">Application Process</a>
+          <a href="community.html">Find a Community</a>
+          <a href="citizenedu.html">Educational Help</a>
+        </div>
+    </div></div>
     <div class="w3-col s3">
       <a href="finances.html" class="w3-button w3-block w3-black">FINANCES</a>
     </div>
