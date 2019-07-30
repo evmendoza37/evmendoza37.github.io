@@ -77,49 +77,18 @@ body, html {
 </div>
 
 <!-- Contact/Area Container -->
-<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-container" id="where" style="padding-bottom:32px;">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT US</span></h5>
-    <form name="htmlform" method="post" action="html_form_send.php">
-    <table width="450px">
-    </tr>
-    <tr>
-    <td valign="top">
-     <label for="name">Name</label>
-    </td>
-    <td valign="top">
-    <input  type="text" name="name" maxlength="50" size="30">
-    </td>
-    </tr>
-      
-    <tr>
-    <td valign="top">
-     <label for="email">Email Address*</label>
-    </td>
-    <td valign="top">
-     <input  type="text" name="email" maxlength="80" size="30">
-    </td>
- 
-    </tr>
-    
-    <tr>
-    <td valign="top">
-    <label for="message">Message*</label>
-    </td>
-    <td valign="top">
-     <textarea  name="message" maxlength="1000" cols="25" rows="6"></textarea>
-    </td>
- 
-    </tr>
-    <tr>
-    <td colspan="2" style="text-align:center">
-     <input type="submit" value="Submit">   ( <a href="https://www.freecontactform.com/html_form.php">HTML Form</a> )
-    </td>
-    </tr>
-    </table>
+    <form>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message" rows="5"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
     </form>
-    </div>
-    </div>
+  </div>
+</div>
+    
   
 <!-- End page content -->
 </div>
