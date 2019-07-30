@@ -16,18 +16,18 @@ if(isset($_POST['email'])) {
     }
      
     // validation expected data exists
-    if(!isset($_POST['Email']) ||
-        !isset($_POST['Message'])) {
+    if(!isset($_POST['email']) ||
+        !isset($_POST['message'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
 
-    $email_from = $_POST['Email']; // required
-    $comments = $_POST['Message']; // required
+    $email_from = $_POST['email']; // required
+    $comments = $_POST['message']; // required
      
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
   if(!preg_match($email_exp,$email_from)) {
-    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+    $error_message .= 'The email address you entered does not appear to be valid.<br />';
   }
    
   if(strlen($comments) < 2) {
