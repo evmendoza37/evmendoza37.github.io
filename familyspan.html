@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html>
+<title>FirstGen|Familia </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/screen.css">
+<link rel="stylesheet" href="css/ToolTip.css">
+<script src="//ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>
+<script src="js/mootools.more.js" type="text/javascript"></script>
+<script src="//d3js.org/d3.v2.min.js?2.9.6" content="UTF-8" http-equiv="encoding"></script>
+<script src="js/ToolTip.js"></script>
+<script src="js/jscolor/jscolor.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<script>
+
+function getVar(variable) {
+	var query = window.location.search.substring(1);
+	var vars = query.split("&");
+	for (var i=0;i<vars.length;i++) {
+		   var pair = vars[i].split("=");
+		   if(pair[0] == variable){return pair[1];}
+	}
+	return(false);
+}
+</script>
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+.logo{
+  position: absolute;
+  text-align: center;
+  padding-top: 800px;
+}
+.fontcenter{
+  height: 100%;
+  color: black;
+  font-family: "Inconsolata", sans-serif;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  margin-right: 50px;
+  margin-left: 50px;
+  }
+ .bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("family2.jpg");
+  max-height: 65%;
+  }
+.menu {
+  display: none;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: grid;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: grid;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+  /* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: inline-block;}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.map{padding-right: 2em;}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="indexspan.html" class="w3-button w3-block w3-black">Casa</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="medicalspan.html" class="w3-button w3-block w3-black">Médica</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="familyspan.html" class="w3-button w3-block w3-black">Vida Familia</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="careerspan.html" class="w3-button w3-block w3-black">Escuel/Carrera</a>
+    </div>
+       <div class="w3-col s3"><div class="dropdown">
+      <a href="citizenspan.html" class="w3-button w3-block w3-black" button class="dropbtn">Ciudadanía</a /button>
+        <div class="dropdown-content">
+          <a href="citizen2span.html"> ¿Es la cuidadanía adecuada para mí? || Mis Derechos </a>
+          <a href="applicationspan.html">Proceso de solicitud</a>
+        </div>
+    </div></div>
+    <div class="w3-col s3">
+      <a href="financesspan.html" class="w3-button w3-block w3-black">Finanzas</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="safetyspan.html" class="w3-button w3-block w3-black">Seguridad</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="supportspan.html" class="w3-button w3-block w3-black">Apoyo</a>
+		<div class="dropdown-content">
+			<a href="indexspan.html">Spanish</a>
+			<a href="application.html">Mandarin</a>
+			<a href="application.html">Korean</a>
+			<a href="application.html">Arabic</a>
+			</div>
+	  </div>
+  </div>
+</div>
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  </div>
+  <div class="w3-center w3-padding-64" id="logo">
+    <img style="z-index:+1"src="firstgenlogo.png">
+</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+</div>
+<br></br>
+<div class="w3-center w3-light-grey w3-padding-48 w3-large">
+	<h2><strong><bold> Familia || Vivir en Estados Unidos </bold></strong></h2>
+   	 <h4 style= "padding-left:20%;padding-right:20%" > Empezar una familia en un nuevo país puede ser extremadamente difícil. Con el fin de ayudar a los nuevos inmigrantes a establecerse en los Estados Unidos, hemos proporcionado sitios web que le ayudarán a encontrar una buena vivienda, escuelas, y proporcionar asesoramiento para padres.</h4>
+  </div>
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <div class="w3-panel w3-leftbar w3-light-grey" style="max-width:100% ">
+  </div>
+
+<!--text-->
+<p> A continuación se muestra un mapa en el que se puede hacer clic y que le permite ver la puntuación de diversidad de cada estado en la parte inferior si pasa el cursor sobre un estado. También puede hacer clic en cualquier estado para ser dirigido a un sitio web que indicará los vecindarios más diversos en ese estado.</p>
+	</div></div><br></br>
+
+<!--clickable map code -->
+<div style="text-align:center">
+<iframe src="https://createaclickablemap.com/map.php?&id=83774&maplocation=false&online=true" class="map" width="900" height="525" style="border: none;"></iframe>
+<script>if (window.addEventListener){ window.addEventListener("message", function(event) { if(event.data.length >= 22) { if( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } else if (window.attachEvent){ window.attachEvent("message", function(event) { if( event.data.length >= 22) { if ( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } </script>
+</div>
+<br></br><br></br>
+
+<!--links-->
+<div class="w3-container" id="scholarship">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Crianza</span></h5>
+    <p>Es importante tener una comprensión general de las diferencias en la crianza en los Estados Unidos, así como los problemas que muchas familias inmigrantes enfrentan a medida que se establecen. Aquí hay algunos enlaces que detallan los temas mencionados, incluyendo guardería.</p><br></br>
+    <p><a href="https://www.childwelfare.gov/topics/systemwide/diverse-populations/immigration/helping-immigrant-families-overcome-challenges/"class="w3-button w3-block w3-black">Refugee/Immigrant Challenges</a></p>
+    <p><a href="https://www.mentalhealthamerica.net/blog/be-child-immigrant" class="w3-button w3-block w3-black">Declaraciones de un Hijo de un Inmigrante</a></p>
+    <p><a href="https://www.kindercare.com/" class="w3-button w3-block w3-black">Guardería: Kindercare</a></p>
+  </div>
+ <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Transporte</span></h5>
+    <p>¡El transporte público es una gran opción para las personas que no tienen acceso a los coches! A continuación se muestran enlaces a pases de compra basados en la ciudad y el estado.</p><br></br>
+    <p><a href="https://www.ventrachicago.com/purchase/"class="w3-button w3-block w3-black">Chicago,IL</a></p>
+    <p><a href="https://new.mta.info/fares-and-tolls/subway-bus-and-staten-island-railway/where-to-buy-metrocard" class="w3-button w3-block w3-black">New York City, New York</a></p>
+    <p><a href="https://www.taptogo.net/TAPLocator2" class="w3-button w3-block w3-black">Los Angeles, California</a></p>
+  </div>
+</div>
+
+
+<br></br>
+<div style="padding: 2em" id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
+		<link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+		<script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24ude547jaGUw84KP3OULoT."+"&opts=16862&num=10&ts=1564424714964");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+  </div>
+
+</body>
+</html>

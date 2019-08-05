@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>FirstGen|Casa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+ .center {
+  padding-right:150px;
+}
+ .port{height:10%;}
+ #logo {padding-left:150px;}
+ table {padding:10px;}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+ /*multiple stuff carousel*/
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* reg. code */
+
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+.logo{
+  position: absolute;
+  text-align: center;
+  padding-top: 800px;
+}
+ .bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("http://i.cdn.turner.com/cnn/2011/POLITICS/08/26/deportation.policy/t1larg.immigrationflags.gi.jpg");
+  min-height: 75%;
+}
+.menu {
+  display: none;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: grid;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: grid;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+  /* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: inline-block;}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="indexspan.html" class="w3-button w3-block w3-black">Casa</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="medicalspan.html" class="w3-button w3-block w3-black">Médica</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="familyspan.html" class="w3-button w3-block w3-black">Vida Familia</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="careerspan.html" class="w3-button w3-block w3-black">Escuela/Carrera</a>
+    </div>
+       <div class="w3-col s3"><div class="dropdown">
+      <a href="citizenspan.html" class="w3-button w3-block w3-black" button class="dropbtn">Ciudadanía</a /button>
+        <div class="dropdown-content">
+          <a href="citizen2span.html"> ¿Es la cuidadanía adecuada para mí? || Mis Derechos </a>
+          <a href="applicationspan.html">Proceso de solicitud</a>
+        </div>
+    </div></div>
+    <div class="w3-col s3">
+      <a href="financesspan.html" class="w3-button w3-block w3-black">Finanzas</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="safetyspan.html" class="w3-button w3-block w3-black">Seguridad</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="supportspan.html" class="w3-button w3-block w3-black">Apoyo</a>
+    <div class="w3-col s3"><div class="dropdown">
+    <a class="w3-button w3-block w3-black" button class="dropbtn">Translate</a /button>
+    <div class="dropdown-content">
+      <a href="indexspan.html">Spanish</a>
+      <a href="application.html">Mandarin</a>
+      <a href="application.html">Korean</a>
+      <a href="application.html">Arabic</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  </div>
+    <div class="w3-center w3-padding-64" id="logo">
+    <img src="firstgenlogo.png" class="center">
+</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+
+<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Boletín</span></h5>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <a href="https://www.nbcnews.com/latino"><img src="img1.jpg" style="width:100%"></a>
+  <div class="text">LATINX</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <a href="https://www.cnn.com/asia"><img src="asian.jfif" style="width:100%"></a>
+  <div class="text">ASIA</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <a href="https://www.indiatoday.in/india"><img src="img3.jfif" style="width:100%"></a>
+  <div class="text">INDIA</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+ <!--carousel-->
+
+
+
+
+
+
+
+
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Sobre Nosotros</span></h5>
+   <img id="logo" src="FBIlogo.png" alt="FBIlogo" class="center" style="max-width:75%;height:auto">
+   <p>Nuestra misión: proporcionar información completa y confiable a los inmigrantes que se aclimatan a la cultura estadounidense y a la vida estadounidense.</p>
+    <p>¡Esperamos que nuestra página le resulte útil!</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>""Recuerda siempre que todos nosotros, y tú y especialmente yo, somos descendientes de inmigrantes y revolucionarios".</i></p>
+      <p>― Franklin D. Roosevelt</p>
+    </div>
+   <table style="width:100%">
+  <tr>
+    <td><img class="port"src="mecropped.png"></td>
+    <td>Emily V. Mendoza</td>
+    <td>¡Hola! ¡Soy Emily! Soy un junior en ascenso. Me uní a este programa para ampliar mis conocimientos en Ciencias de la Computación! He estado codificando durante un par de años, hasta ahora realmente disfruto CS! Aparte de la codificación me encanta jugar videojuegos, aprender sobre las maravillas del espacio y el océano, y el hardware de la computadora!</td>
+  </tr>
+  <tr>
+    <td><img class="port"src="lielaprofile.png"></td>
+    <td>Liela G. Pressley</td>
+    <td>¡Hola! Mi nombre es Liéla, me uní a GWC sólo para probar algo nuevo y ahora puedo añadir otra cosa a mi lista de pasiones. He aprendido mucho y estoy deseando aprender cómo seguir aprendiendo cómo aplicar estas habilidades para servir y beneficiar a otras vidas. Me encantan todas las cosas ciencia biomédica, arte, desarrollo web / aplicaciones, y la música!</th>
+  </tr>
+    <tr>
+    <td><img class="port" src="DestinyBio.jpg"></td>
+    <td>Destiny Williamson</td>
+    <td>Hola , Mi nombre es Destiny me gustó en la codificación cuando estaba en octavo grado. Estoy ahora un junior. Aprendí tanto hasta ahora que fue una experiencia divertida.</td>
+  </tr>
+    <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+  </tr>
+    <tr>
+     <td><img src="https://png.pngtree.com/svg/20160506/5401434f9c.svg" alt="anonymous icon" style="width:50px;height:50px;"></td>
+    <td>Lynn</td>
+    <td>¡Hola! Soy un estudiante de último año en el programa GWC. Mi lenguaje de codificación favorito es Python, y mis intereses incluyen la astronomía computacional y los youtubes!</td>
+  </tr>
+</table>
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+  <div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Contáctenos</span></h5>
+    <form>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nombre"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Correo Electrónico" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensaje" required name="Message" rows="5"></p>
+      <p><button class="w3-button w3-black" type="submit">ENVIAR MENSAJE</button></p>
+    </form>
+  </div>
+</div>
+
+
+
+
+<!-- End page content -->
+</div>
+
+
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+
+</body>
+</html>
